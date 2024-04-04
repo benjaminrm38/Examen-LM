@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         header {
+            width: 100%;
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float:center;
+            height: 200px;
+        }
+        #menu {
+            text-decoration: solid;
+            color: #000000;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        #opciones {
+            display: none;
+            padding: 10px;
+            text-align: center;
+        }
+        #opciones a {
+            display: block;
+            color: #000000;
+            padding: 8px 0;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #opciones a:hover {
+            background-color: #777;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #a09f9f;
+            margin: 0;
+            padding: 0;
+
+        }
+        #contenedor1 {
+        display: flex;
+        align-items: center; /* Centrar verticalmente */
+        max-width: 100%; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centrar horizontalmente */
+        }
+        #parrafo {
+            color: #fff;
+            text-align: center;
+            width: 40%;
+            margin: 0;
+            font-size: 16px;
+        }
+        #p1 {
+            padding: 25px;
+            max-width: 30%; 
+            margin-left: 10%; 
+            border-radius: 60px;
+            max-height: 250px;
+        }
+        #p2 {
+            padding: 25px;
+            max-width: 30%; 
+            margin-right: 10%; 
+            border-radius: 60px;
+            max-height: 250px;
+        }
+        #contenedor2 {
+        float: left;
+        align-items: center; /* Centrar verticalmente */
+        max-width: 50%; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centrar horizontalmente */
+        max-height: 600px;
+        }
+        #p3 {
+            padding: 25px;
+            max-width: 60%; 
+            margin-left: 10%; 
+            border-radius: 60px;
+            max-height: 30%;
+        }
+        #parrafo1 {
+            color: #fff;
+            text-align: center;
+            width: 80%;
+            margin: 0;
+            font-size: 16px;
+            margin-left: 10%; 
+            margin-right: 10px; 
+            padding: 25px;
+        }
+        #contenedor3 {
+        float: left;
+        background-color: rgba(75, 97, 90, 0.548);
+        border-radius: 60px;
+        align-items: center; /* Centrar verticalmente */
+        width: 50%; /* Ancho máximo del contenedor */
+        max-height: 60%;
+        margin: 0 auto; /* Centrar horizontalmente */
+        }
+        #campoFormulario {
+            margin-top: 35px;
+            margin-left: 35px;
+            float: center;
+            text-align: center;
+        }
+        #campoFormulario1 {
+            margin-top: 35px;
+            margin-left: 35px;
+            float: center;
+            text-align: center;
+        }
+        #campoFormulario2 {
+            margin-top: 35px;
+            margin-left: 35px;
+            float: center;
+            text-align: center;
+        }
+       
+        #botonFormulario {
+            margin-top: 35px;
+            background-color: black;
+            color: white;
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+            display: flex;
+            text-align: center;
+            bottom: 20px;
+
+            
+        }
+
+    #p4 {
+        float: center;
+            align-items: center;
+            padding: 25px;
+            width: 60%; 
+            margin-left: 20%; 
+            border-radius: 60px;
+            max-height: 300px;
+            margin: 1 auto; /* Centrar horizontalmente */
+
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            border-radius: 60px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+}
+        ul {
+            font-size: 11px;
+            list-style: none;
+            font-weight: 700;
+            margin-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benjamin empresa">
+    <meta name="author" content="benjamin.ramirez@a.vedrunasevillasj.es">
+    <meta name="language" content="ES">
+    <meta name="revised" content="viernes,  Decembre 21, 2023, 18:30pm">
+    <title>Benjamin empresa</title>
+
+    <div id="menu" onclick="toggleMenu()">Menú</div>
+    <div id="opciones">
+      <a href="https://vedrunasevilla.org/">vedruna sevilla</a>
+      <a href="https://fpvedrunasevilla.org/">FP vedruna sevilla</a>
+      <a href="https://open.tutoring.es/guias_didacticas/GD_UF1303.pdf">Tutoria guias didacticas</a>
+    </div>
+    <script>
+        function toggleMenu() {
+          var opciones = document.getElementById('opciones');
+          opciones.style.display = (opciones.style.display === 'block') ? 'none' : 'block';
+        }
+      </script>
+
+</header>
+<body>
+    <div id="contenedor1">
+        <img src="img/reunion.jpg" id="p1" alt="Imagen de una reunion">
+        <p id="parrafo">
+            Mi empresa trata de una aplicación de meetings, que quiere decir.
+            Pues que es una app para reuniones donde se conseguiran un objetico cualquiera mediante unas pautas
+            como pueden ser: reuniones, planteamiento, desarrollo , etc ... 
+        </p>
+        <img src="img/Objetivo.jpg" id="p2" alt="Imagen de un objetivo">
+    </div>
+    <div id="contenedor2">
+        <img src="img/reunion_lanzamiento.jpg" id="p3" alt="Imagen de una reunion">
+        <p id="parrafo1">
+            Ahora nuestra app nos permite hacer tanto reuniones publicas como privadas o por invitacion.
+            Esta misma tendra tanto chats, como permisos para camara y micro o incluso subida de archivos de hasta 15Gb 
+            e implementa tambien la comparticion de pantalla propia.
+            Y todo esto es para que se mejore considerablemente la comunicacion y con finalidad de cometer los minimos errores
+            posibles
+        </p>
+    </div>
+    <div id="contenedor3">
+        <form>
+            <div id="campoFormulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required placeholder="Escribe tu nombre">
+            </div>
+
+            <div id="campoFormulario1">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required placeholder="1r Apellido">
+            </div>
+
+            <div id="campoFormulario2">
+                <label for="correo" required>Email</label>
+                <input type="email" id="correo" required placeholder="email">
+            </div>
+        
+            <input id="botonFormulario" type="submit" value="enviar datos">
+        </form>
+
+        <img src="img/iconos.jpg" id="p4" alt="iconos">
+
+    </div>
+</body>
+<footer>
+    <nav id="listaInformacion">
+        <ul>
+            <li>Política de Privacidad</li>
+            
+            <li>Quiénes somos</li>
+            <li>Aspectos legales</li>
+            
+            <li>contacta</li>
+            <li>donde estamos</li>
+            
+            <li>acceso a alas diferentes redes sociales</li>
+        </ul>
+    </nav>
+</footer>
+</html>
